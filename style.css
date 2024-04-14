@@ -1,0 +1,164 @@
+/* General Styles */
+
+body {
+  background-color: #ebebeb;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 30px;
+}
+
+/* Logo and Instruction Styles */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  height: auto;
+}
+
+.instructions {
+  text-align: center;
+  text-decoration: underline;
+}
+
+ol {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+  overflow-wrap: break-word;
+}
+
+/* Form Styles */
+
+#userForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+#userForm input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid lightgray;
+}
+
+#userForm textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid lightgray;
+}
+
+#userForm button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #5adbb5;
+  cursor: pointer;
+  color: white;
+}
+
+#userForm button:hover {
+  background-color: #5dbea3;
+}
+
+/* Container Styles */
+
+#displayContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Card Styles */
+
+.card {
+  background-color: white;
+  border: 3px solid;
+  border-color: lightgray;
+  border-radius: 15px;
+  padding: 15px;
+  word-wrap: break-word;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Button Styles */
+
+.featured {
+  border-color: gold;
+  font-weight: bold;
+}
+
+.featButton {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #a881af;
+  cursor: pointer;
+  color: white;
+}
+
+.featButton:hover {
+  background-color: #80669d;
+}
+
+.deleteButton {
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #ED0800;
+  cursor: pointer;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c40902;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 614px) {
+  .logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+}
