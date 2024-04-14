@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Birthday Card Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Content of your web application goes here -->
+  <img src="https://i.imgur.com/juJb63F.png" class="logo" title="Site Logo" alt="Your Virtual Birthday Cards Logo" />
+  <p class="instructions">Instructions:</p>
+  <ol>
+    <li>Enter your preferred name.</li>
+    <li>Write your message.</li>
+    <li>Paste the URL of the image or GIF you'd like to use for the card.</li>
+    <li>Click "Generate Card"</li>
+    <li>Click the "Feature" button if you'd like to highlight your card(s) and click the "Delete" button if you'd like to remove them.</li>
+    <li>Create as many cards as you'd like, share them with your friends/family, and most of all, ENJOY!</li>
+  </ol>
+  <br />
+  <form id="userForm">
+    <input type="text" id="userName" placeholder="Your Name" required>
+    <textarea id="userMsg" placeholder="Your Message" required></textarea>
+    <input type="url" id="imgUrl" placeholder="Paste Your Image/GIF URL" required>
+    <button type="submit">Generate Card</button>
+  </form>
+  <div id="displayContainer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
